@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngomb.stopbashing.activities.ParentOrFriendActivity">
+
+    <include layout="@layout/toolbar"
+            android:id="@+id/parent_or_friend_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/snd_container"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/frst_container"
+        android:background="@drawable/linear_background"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Parents ou bon ami"
+            android:textSize="21dp"
+            android:textAppearance="@style/font_text_bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Connectez-vous à votre compte"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:textAppearance="@style/font_text_normal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Numéro de portable "
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:hint="Mot de passe familial"
+            android:inputType="textPassword"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"
+            />
+
+        <TextView
+            android:id="@+id/tv_password_forgetten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Mot de passe oulié ?"
+            android:textSize="16dp"
+            android:textAppearance="@style/font_text_bold"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_btn"
+            android:elevation="2dp"
+            android:textColor="#fff"
+            android:text="Accéder à votre compte familial"
+            android:textAppearance="@style/font_text_bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

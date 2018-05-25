@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context="com.ngomb.stopbashing.activities.CreateAccountActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/create_account_tollbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_below="@id/iv_logo_header"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/linear_background"
+        android:elevation="7dp"
+       >
+
+        <TextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_tv_create_account"
+            android:text="Prénom"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="31dp"
+            />
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_tv_create_account"
+            android:text="Nom"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="31dp"
+            />
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email_number_password"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/ll_name"
+        android:orientation="vertical"
+        android:background="@drawable/linear_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_tv_create_account"
+            android:text="Email"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="31dp"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_tv_create_account"
+            android:text="Numéro de téléphone"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="31dp"
+            />
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_tv_create_account"
+            android:text="Mot de passe familial"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="31dp"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_btn"
+        android:elevation="2dp"
+        android:layout_below="@id/ll_email_number_password"
+        android:textColor="#fff"
+        android:text="@string/cr_z_votre_compte_familial"
+        android:textAppearance="@style/font_text_bold"/>
+
+
+</RelativeLayout>

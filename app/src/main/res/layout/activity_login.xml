@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.ngomb.stopbashing.activities.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_logo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_header"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/frst_container"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_below="@id/iv_logo_header"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/linear_background"
+        android:elevation="7dp">
+
+        <TextView
+            android:id="@+id/tv_parent_or_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Parents ou bon ami"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_btn"
+            android:elevation="2dp"
+            android:textColor="#fff"
+            android:text="@string/cr_z_votre_compte_familial"
+            android:textAppearance="@style/font_text_bold"/>
+
+        <Button
+            android:id="@+id/already_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_btn_2"
+            android:text="Déjà un compte ? Se connecter "
+            android:textColor="@color/colorAccent"
+            android:textAppearance="@style/font_text_bold"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/snd_container"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/frst_container"
+        android:background="@drawable/linear_background"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Enfants ou ados"
+            android:textSize="21dp"
+            android:textAppearance="@style/font_text_bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/rejoignez_votre_famille"
+            android:textSize="16dp"
+            android:textStyle="normal"
+           android:textAppearance="@style/font_text_normal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+        
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Numéro de portable "
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"/>
+
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:hint="Mot de passe familial"
+            android:inputType="textPassword"
+            android:background="@drawable/background_input"
+            android:textAppearance="@style/font_text_normal"
+            />
+
+        <Button
+            android:id="@+id/btn_join_my_familly"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/background_btn_3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Rejoindre ma famille "
+            android:textColor="#fff"
+          android:textAppearance="@style/font_text_bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StopBashing</string>
+    <string name="enfants_ou_ados">Enfants ou Ados</string>
+    <string name="rejoignez_votre_famille">Rejoignez votre famille ,</string>
+    <string name="cr_z_votre_compte_familial">Crééz votre compte familial</string>
+    <string name="creer_votre_famille">Créez votre famille</string>
+    <string name="compte_parent_ami">Compte parent ou bon ami </string>
+    <string name="nouveau_mot_de_passe">Nouveau mot de passe </string>
+    <string name="password_forget">Mot de passe oublié ?</string>
+
+</resources>

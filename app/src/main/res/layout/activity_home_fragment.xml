@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngomb.stopbashing.fragments.HomeFragmentActivity">
+
+    <LinearLayout
+        android:id="@+id/main_linear_galerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/linear_background"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:elevation="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/emoji_sablier"
+           />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/emoji_happy"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/emoji_bad"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/emoji_angry"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma Galerie"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_linear_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/main_linear_galerie"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/linear_bg_camera"
+        android:minHeight="81dp"
+        android:elevation="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_ic_blue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poster des photos"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29dp"
+            android:textColor="#312B34"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_linear_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/main_linear_camera"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_bg_phone"
+        android:minHeight="81dp"
+        android:layout_marginTop="10dp"
+        android:elevation="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_ic_blue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts d'urgence"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29dp"
+            android:textColor="#312B34"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_linear_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/main_linear_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear_bg_help"
+        android:minHeight="81dp"
+        android:elevation="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help_ic_blue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poster des photos"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29dp"
+            android:textColor="#312B34"
+            android:textAppearance="@style/font_text_normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
