@@ -15,7 +15,7 @@
         android:background="@drawable/linear_background"
        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="65dp"
         android:elevation="5dp">
 
 

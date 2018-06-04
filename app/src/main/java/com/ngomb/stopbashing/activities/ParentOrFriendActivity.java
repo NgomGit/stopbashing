@@ -34,9 +34,12 @@ public class ParentOrFriendActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+
+        parentOrFriendToolbar.setTitle("Parents ou bon ami");
+        parentOrFriendToolbar.setNavigationIcon(R.drawable.back_icon_header);
         setSupportActionBar(parentOrFriendToolbar);
-        parentOrFriendToolbar.setTitle(R.string.compte_parent_ami);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
          tvPasswordForgetten.setOnClickListener(new View.OnClickListener() {
              @Override

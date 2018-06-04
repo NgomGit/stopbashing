@@ -51,6 +51,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 //        });
 
         createAccountToolbar.setTitle(R.string.creer_votre_famille);
+        createAccountToolbar.setNavigationIcon(R.drawable.back_icon_header);
         setSupportActionBar(createAccountToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

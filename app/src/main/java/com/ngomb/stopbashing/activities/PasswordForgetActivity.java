@@ -26,9 +26,11 @@ public class PasswordForgetActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        passwordForgetToolbar.setNavigationIcon(R.drawable.back_icon_header);
+        passwordForgetToolbar.setTitle("Mot de passe oublié");
         setSupportActionBar(passwordForgetToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        passwordForgetToolbar.setTitle(R.string.password_forget);
+
 
         btnGetLink.setOnClickListener(new View.OnClickListener() {
             @Override

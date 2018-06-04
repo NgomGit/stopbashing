@@ -2,7 +2,7 @@
 <android.support.v7.widget.Toolbar android:id="@+id/app_toolbar"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
     app:titleTextColor="#fff"
     xmlns:app="http://schemas.android.com/apk/res-auto">

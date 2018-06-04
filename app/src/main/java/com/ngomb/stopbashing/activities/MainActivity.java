@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar
 
 
-       mainToolbar.inflateMenu(R.menu.main_menu_toolbar);
 
         //Toolbar --------------
         setSupportActionBar(mainToolbar);
@@ -57,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         final FragmentTransaction transaction = fragmentManager.beginTransaction();
 
         transaction.replace(R.id.main_fl_container, defaultFrament).commit();
-
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

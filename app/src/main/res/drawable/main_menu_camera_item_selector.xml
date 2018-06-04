@@ -3,6 +3,8 @@
 
     <item   android:state_checked="true"
         android:drawable="@drawable/camera_ic_footer_selected">
+
+        <color android:color="#fff"></color>
     </item>
     <item android:drawable="@drawable/camera_ic_footer"></item>
 

@@ -4,26 +4,28 @@
 
     <item
         android:id="@+id/main_menu_home"
-        android:title=""
+        android:title="home"
         android:enabled="true"
         app:showAsAction="ifRoom"
         android:checked="true"
         android:icon="@drawable/main_menu_home_item_selector">
 
 
+
     </item>
 
     <item
         android:id="@+id/main_menu_gallerry"
-        android:title=""
+        android:title="gallery"
         android:enabled="true"
         app:showAsAction="ifRoom"
         android:icon="@drawable/main_menu_gallery_item_selector">
     </item>
 
     <item
+
         android:id="@+id/main_menu_camera"
-        android:title=""
+        android:title="Poster une photo"
         android:enabled="true"
         app:showAsAction="ifRoom"
         android:icon="@drawable/main_menu_camera_item_selector">

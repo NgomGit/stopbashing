@@ -39,4 +39,10 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 0;
     }
+
+    /**
+     * Created by ngomb on 03/06/2018.
+     */
+
+
 }

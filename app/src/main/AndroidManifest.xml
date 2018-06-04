@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ngomb.stopbashing">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,10 +33,8 @@
         <activity
             android:name=".activities.PasswordForgetActivity"
             android:parentActivityName=".activities.ParentOrFriendActivity" />
-        <activity android:name=".activities.NewPasswordActivity" />
-        <activity android:name=".fragments.HomeFragmentActivity" />
-        <activity android:name=".fragments.GalerieFragmentActivity" />
-        <activity android:name=".fragments.CameraFragmentActivity"></activity>
+        <activity android:name=".activities.NewPasswordActivity"  android:parentActivityName=".activities.PasswordForgetActivity"/>
+
     </application>
 
 </manifest>

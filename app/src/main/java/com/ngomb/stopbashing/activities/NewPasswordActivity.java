@@ -20,8 +20,12 @@ public class NewPasswordActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+
+        newPasswordToolbar.setNavigationIcon(R.drawable.back_icon_header);
+        newPasswordToolbar.setTitle("Nouveau mot de passe ");
         setSupportActionBar(newPasswordToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         newPasswordToolbar.setTitle(R.string.nouveau_mot_de_passe);
     }
